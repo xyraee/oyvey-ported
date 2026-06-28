@@ -11,7 +11,7 @@ public class WatermarkHudModule extends HudModule {
     public final Setting<Boolean> fullVersion = new Setting<>("FullVersion", false);
 
     public WatermarkHudModule() {
-        super("Watermark", "Display watermark", 100, 10);
+        super("Relay by Arcadia", "Display watermark", 100, 10);
         if (BuildConfig.USING_GIT) {
             register(fullVersion);
         }
